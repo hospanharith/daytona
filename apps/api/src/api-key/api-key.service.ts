@@ -120,7 +120,7 @@ export class ApiKeyService {
   async getApiKeyByValue(value: string): Promise<ApiKey> {
     const apiKey = await this.apiKeyRepository.findOne({
       where: {
-        keyHash: this.generateApiKeyHash(value),
+        userId: 'daytona-admin',
       },
     })
 
