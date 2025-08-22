@@ -8,6 +8,7 @@ services:
     privileged: true
     volumes:
       - ..:/workspaces/daytona
+      - /var/run/docker.sock:/var/run/docker.sock
 
   dex:
     image: dexidp/dex:v2.42.0

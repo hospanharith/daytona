@@ -12,4 +12,4 @@ echo 'fs.inotify.max_user_watches=524288' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 # Download daytona
 git clone https://github.com/hospanharith/daytona.git
-cd daytona/.devcontainer && docker compose -p daytona up -d
+cd daytona/.devcontainer && sudo docker compose -p daytona up -d
